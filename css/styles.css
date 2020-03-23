@@ -1,0 +1,340 @@
+/*
+=====================================================================
+*   RMG v1.0 Layout Stylesheet - 2020
+===================================================================== 
+*/
+
+/* ===================================================================== */
+/*   MAIN STYLE                                                          */
+/* ===================================================================== */
+body {
+  /* background-color: #424874; */
+  background-size: cover;
+  background: url(../img/background/bluesky.jpg);
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway',sans-serif;
+  margin-top: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1{
+	font-size: 60px;
+  color: white;
+  display: inline;
+}
+
+h2{ 
+  color: #DC7075;
+  display: inline
+}
+
+h4 {
+	color: white;
+	font-weight: 400;
+}
+
+a:hover, a:focus {
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+/* ===================================================================== */
+/*   HEADER                                                              */
+/* ===================================================================== */
+#header .container{
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 30px 0;
+}
+
+/* ===================================================================== */
+/*   FOOTER                                                              */
+/* ===================================================================== */
+#footer {
+  bottom: 0;
+  left: 0;
+  padding: 2em 4em 6em 0;
+  position: relative !important;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  font-family: 'Raleway',sans-serif;
+  color: #464159;
+}
+@media(max-width:766px){
+  #footer {
+    position: absolute !important;
+  }
+}
+@media(max-width:420px){
+  #footer {
+    position: relative !important;
+  }
+}
+
+#social-media {
+  display: block;
+  margin: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+}
+
+#social-media ul {
+  margin: 0px; 
+  padding: 0px;
+  text-align: center;
+}
+
+#social-media ul li {
+  margin-right: 5px;
+  height: 34px;
+  line-height: 34px;
+  list-style-type: none;
+  display: inline-block; 
+}
+
+#social-media ul li a {
+  width: 34px;
+  height: 34px; 
+  display: inline-block;
+}
+#social-media ul li a :hover {
+  color: black;
+}
+
+.plus-size-icon {
+  font-size: 35px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+}
+.copyright a {
+  color: #FABC3D;
+  text-decoration: none;
+}
+
+/* ===================================================================== */
+/*   GENERAL                                                             */
+/* ===================================================================== */
+.hcity {
+  margin: 3px;
+  color: #FFF;
+  background-color: #464159;
+  border-color: #FABC3D;
+}
+
+.hcity:hover {
+  color: #464159;
+  background-color: #FABC3D;
+  border-color: #FFF;
+  border:1px dotted;
+}
+
+h1 em, h2 em, h3 em, h4 em{
+	font-size:0.5em;
+	vertical-align:top;
+}
+
+.forecast-container {
+  background-image: -webkit-linear-gradient(rgba(110, 183, 220, 0.5), rgba(241, 243, 244, 0.5));
+  background-image: linear-gradient(rgba(110, 183, 220, 0.5), rgba(241, 243, 244, 0.5));
+  color: #323544;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.forecast-container .forecast {
+  display: table-cell;
+  vertical-align: top; 
+  width: auto;
+}
+
+.forecast-container .forecast:nth-child(even) {
+	background-image: -webkit-linear-gradient(rgba(255, 253, 249, 0.8), rgba(241, 243, 244, 0.8));
+  background-image: linear-gradient(rgba(255, 253, 249, 0.8), rgba(241, 243, 244, 0.8));
+}
+@media screen and (max-width: 990px) {
+  .forecast-container .forecast {
+    display: block;
+    width: 16.6667%;
+    float: left; 
+  } 
+}
+
+.forecast-container .forecast.today {
+  width: 420px; 
+}
+
+.forecast-container .forecast.today .forecast-header {
+  *zoom: 1; 
+}
+
+.forecast-container .forecast.today .forecast-header:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0; 
+}
+
+.forecast-container .forecast.today .forecast-header .date {
+  float: left;
+}
+
+.forecast-container .forecast.today .forecast-header .date h4 {  
+  font-size: 26px;
+}
+
+.forecast-container .forecast.today .forecast-header .logo {
+  float: right; 
+}
+
+.forecast-container .forecast.today .degree .num {
+  font-size: 90px;
+  font-size: 6.4285714286rem;
+  margin-right: 30px; 
+}
+
+.forecast-container .forecast.today .forecast-content {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.forecast-container .forecast.today .degree .num, 
+.forecast-container .forecast.today .degree .forecast-icon {
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+.forecast-container .forecast.today .degree .forecast-desc {
+  vertical-align: middle; 
+  font-family: 'Raleway',sans-serif;
+  text-transform: uppercase;
+}
+
+.forecast-container .forecast.today .degree .num {
+  font-size: 90px;
+  font-size: 6.4285714286rem;
+  margin-right: 30px; 
+}
+
+.forecast-container .forecast.today span {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.forecast-container .forecast.today #col_left 
+{
+  float: left; 
+}
+.forecast-container .forecast.today #col_right 
+{
+  float: right; 
+}
+
+.forecast-container .forecast.today .uv-index {
+  padding: 5px;
+}
+
+.forecast-container .forecast.today .bottom_space {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 990px) {
+  .forecast-container .forecast.today {
+    display: block;
+    width: 100%; 
+  } 
+}
+
+.forecast-container .forecast .forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  text-align: center;
+  font-weight: 400; 
+}
+
+.forecast-container .forecast .forecast-daily-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 18.5px;
+  text-align: center;
+  font-weight: 400; 
+}
+
+.forecast-container .forecast .forecast-daily-header .day {
+  color: #DC7075; 
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-weight: 700; 
+}
+
+.forecast-container .forecast .forecast-icon {
+  height: 50px; 
+}
+
+.forecast-container .forecast .forecast-content {
+  padding: 25px 10px 10px;
+  text-align: center; 
+}
+
+.forecast-container .forecast .forecast-content .forecast-icon {
+  margin-bottom: 20px; 
+}
+
+.forecast-container .forecast .forecast-content .forecast-daily-icon {
+  margin-bottom: 3px; 
+}
+
+.forecast-container .forecast .forecast-content .degree {
+  font-size: 17px;
+  font-size: 1.10em;
+	color: white;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  font-weight: 700; 
+}
+
+.forecast-container .forecast .forecast-content small {
+  font-size: 16px;
+  font-size: 1.1428571429em; 
+} 
+		
+.form-control {
+	border-radius: 5%;
+}
+@media (min-width: 768px){
+	.form-control {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
